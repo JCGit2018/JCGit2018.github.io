@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Página de ejemplo del MOOC de LINUX - UPM.">
+    <meta name="description" content="Curriculum">
     <!--Sustituir por los datos del alumno-->
     <meta name="author" content="Juan Carlos Liuzzi">
 
@@ -12,6 +12,10 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -20,12 +24,13 @@
       <h3>Juan Carlos Liuzzi <span><img style="width: 214px; height: 164px;" class='img-circle' alt="Juan Carlos Liuzzi" src="img/foto.png" align="right"></span></h3>
       <p>
         <!--Sustituir por los datos del alumno-->
-        Coordinador<br>
-        Informática<br>
+        Profesión:&nbsp &nbsp &nbsp &nbsp &nbsp Ingeniero Electrónico<br>
+        Cargo Actual:&nbsp &nbsp Coordinador Informática<br>
         UBA
       </p>
       <address>
         <!--Sustituir por los datos del alumno-->
+		<span class='glyphicon glyphicon-pencil'></span> jcmundo2007@gmail.com <br>
         <span class='glyphicon glyphicon-pencil'></span> mainchild2007@yahoo.com <br>
       </address>
 
@@ -38,26 +43,104 @@
     </div>
 
     <div class="container">
-      <div class='row'>
-        <div class='col-sm-8'>
-          <br>
-          <p>Ingeniero Electrónico. Más de 30 años de experiencia . Actualmente trabajo en la Universidad Bicentenaria de Aragua como Coordinador de Informática  </p>
-          
-          <p>Manejo de HTML,Java, Javascript(NODE.JS),Python, PHP. Proyectos con Raspberry, Arduino</p>
+    <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="tab" href="#home">Datos</a></li>
+    <li><a data-toggle="tab" href="#menu1">Experiencia Laboral</a></li>
+    <li><a data-toggle="tab" href="#menu2">Cursos</a></li>
+    <li><a data-toggle="tab" href="#menu3">Idiomas</a></li>
+	<li><a data-toggle="tab" href="#menu4">Experiencia Adquirida</a></li>
+	<li><a data-toggle="tab" href="#menu5">Habilidades Destacables</a></li>
 
-          <h3>Cursos</h3>
+    </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Datos Personales</h3>
+      <p>Fecha de nacimiento: 27/11/1.962</p>
+      <p>  Lugar de origen       : CARACAS, VENEZUELA</p>
+	  <h3>Estudios Relizados</h3>
+	  <p>Año: 1984</p>
+	  <p>Tìtulo Obtenido:INGENIERO ELECTRÓNICO </p>
+	  <p>UNIVERSIDAD SIMON BOLIVAR </p>
+	  <p>Caracas , Venezuela </p>
+
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Experiencia Laboral</h3>
+	  <table class='table table-striped'>
+	  <tr><th>Empresa</th><th>Cargo desempeñado</th><th>Período</th></tr>
+	  <tr><td>UNIVERSIDAD BICENTENARIA DE ARAGUA</td><td>COORDINADOR DE INFORMATICA,PROFESOR</td><td>17/02/2016-ACTUAL</td></tr>
+	  <tr><td>MUMINET CYBERCONEXIONES, C. A</td><td>DIRECTOR</td><td>09/07/2007 – 01/11/2014</td></tr>
+	  <tr><td>EXCELSIOR GAMA SUPERMERCADOS</td><td>SUB-GERENTE INFRAESTRUCTURA TI</td><td>30/05/2006 – 21/02/2007</td></tr>
+	  <tr><td></td><td>COORDINADOR DE TECNOLOGÍA</td><td>:   15/01/2004 –30/05/2006</td></tr>
+	  <tr><td></td><td>ANALISTA DE DESARROLLO</td><td>19/12/2001 –15/01/2004</td></tr>
+	  <tr><td></td><td></td><td></td></tr>
+	  <tr><td></td><td></td><td></td></tr>
+	  <tr><td></td><td></td><td></td></tr>
+	  </table>
+	  
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Cursos</h3>
           <table class='table table-striped'>
-            <tr><td><a href="https://www.miriadax.net" target="blank">Introducción a Linux como entorno de desarrollo de sistemas software</a>.</td></tr>
+		    <tr><td>Diplomado Entornos de Aula Virtuales, Febrero-Junio 2017,Universidad Bicentenaria de Aragua </td></tr
+           <tr><td>ITIL FOUNDATIONS, Marzo 2006 , 24 Horas</td></tr>
+		   <tr><td>	DHS , Marzo 2005, 32 Horas</td></tr>
+		   <tr><td>Cisco Voice over IP , Mayo 2004, 40 Horas</td></tr>
+		   <tr><th>Cursos via Internet</th></tr>
+		   <tr><td><a href="https://www.miriadax.net" target="blank">Introducción a Linux como entorno de desarrollo de sistemas software</a>.</td></tr>
             <tr><td><a href="https://www.miriadax.net" target="blank">Diseño Web con HTML5 + CSS</a></td></tr>
             <tr><td><a href="https://www.miriadax.net" target="blank">Practical Internet of Things (loT) with RaspberryPi</a></td></tr>
             <tr><td><a href="https://www.miriadax.net" target="blank">Control de movimiento de robot móvil</a></td></tr>
           </table>
-        </div>
-      </div>
+    </div>
+	
+    <div id="menu3" class="tab-pane fade">
+	  <h3>Idiomas</h3>
+	  <p>Español (Nativo) </p>
+      <p>Ingles, NIvel Intermedio</p>
+	  <p>Italiano, NIvel Intermedio</p>
+    </div>
+	<div id="menu4" class="tab-pane fade">
+	  <h3>Experiencia Adquirida</h3>
+      <ul>
+	  <li>Manejo de HTML,Java, Javascript(NODE.JS),Python, PHP. Proyectos con Raspberry, Arduino</li>
+	  <li>Administración Empresarial, manejo de personal</li>
+      <li>Sistemas Operativos   Windows,  Linux , Android </li>
+	  <li>Operación y  Configuración de  Microsoft Office, Office 365, Skype </li>
+	  <li>Adiestramiento y capacitación para reparación y manejo de PCs </li>
+	  <li>Bases de datos: Manejo de SQL, Ms Access, Mysql, Posgresql, Sqlite, Redis, MongoDB </li>
+	  <li>Diseño y elaboración de proyectos de electrónica digital </li>
+	  <li>Realización de cursos en el área Informática  </li>
+	  <li>Configuración  y administración  de Servidores  y  redes TCP/IP e inalámbricas  </li>
+	  
+	  </ul>
 
+    </div>
+    
+	<div id="menu5" class="tab-pane fade">
+	  <h3>Habilidades Destacables</h3>
+      <ul>
+	  <li>Trabajar bajo presión </li>
+	  <li>Autoaprendizaje </li>
+	  <li>Trabajo en equipo </li>
+	  <li>Planificación de trabajo </li>
+	  <li>Orientación al logro  </li>
+	  <li>Atención al cliente y/o usuario </li>
+	  <li>Alto nivel de análisis y solución  </li>
+	  
+	  </ul>
+    </div>
+
+
+	
+	
+ </div>
+
+ 
       <footer class="footer">
         <!--Sustituir por los datos del alumno-->
-        <p>&copy; Juan Carlos Liuzzi - 2018</p>
+        <p>&copy; Juan Carlos Liuzzi - 2019</p>
       </footer>
 
     </div>
