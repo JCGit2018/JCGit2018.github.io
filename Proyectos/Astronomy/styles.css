@@ -1,0 +1,48 @@
+/* Properties of the header: color, style, size, font, border width and style,background*/
+body{
+background:#FFCC99;
+}
+
+h1{
+  color:blue;
+  font-style: italic;
+  font-size:55px;
+  font-family: sans-serif;
+  border: 3px dashed gray;
+  text-align:center;
+}
+.crop-img{
+  max-height:120px;
+  max-width:120px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.large-img{
+  max-width:70%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border:thick double;  
+  
+}
+
+.note{
+ font-style:italic;
+ font-size:14px;
+ margin-top: 15px;
+ border:groove;
+ background-color:#FFFF99;
+ 
+}
+
+
+.header{
+ color:#333366;
+ font-size:24px;
+ font-style:oblique;
+ font-family:"Times New Roman", Times, serif;
+}
+.ibig {
+ margin-top:15px;
+ border:double;
+}

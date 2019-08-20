@@ -1,0 +1,64 @@
+/* put your css code here */
+.crop-img{
+  max-height:150px;
+  max-width:100%;
+}
+
+.large-img{
+  max-width:100%;
+  
+}
+
+.carousel-img{
+    margin: auto;
+    padding: 10px;
+    max-height:300px;
+    max-width:100%;
+
+}
+.category-label{
+font-family:"Times New Roman", Times, serif;
+background-color:#00FF99;
+border:medium;
+font-size:36px;
+color:#336699;
+}
+
+.number-label{
+font-family:"Times New Roman", Times, serif;
+font-style:italic;
+background-color:#FFCC33;
+color:#990033;
+border:medium;
+font-size:16px;
+}
+.description-label{
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#FFFF00;
+}
+.desc{
+text-align:justify;
+border:medium;
+
+}
+.header{
+color:#FF3333;
+font-size:36px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+* 
+ * uncomment this for some css3 drop shadows and rounded corners.
+ */
+
+/*
+.thumbnail,.nav, .large-img, .crop-img{
+  border-radius: 25px;
+  padding-top:5px;
+}
+
+.thumbnail,.nav {
+  box-shadow: 10px 10px 5px #888888;
+}
+*/

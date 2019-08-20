@@ -1,0 +1,100 @@
+<!-- This is a first example of using a template -->
+
+<head>
+<title>Animals</title>
+
+<!-- include our libraries and css files -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/handlebars-v3.0.3.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="AnimalsData.js"></script>
+<script src="assignment.js"></script>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="assignment.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+ <div class="container">
+
+      <!-- page tile -->
+      <div class="jumbotron">
+        <h1 align="center">Animal Kingdom </h1>
+		<h4 align="right">Ing. Juan C. Liuzzi </h4>
+      </div>    
+
+      <!-- A navigation menu that selects different views -->
+      <ul class="nav nav-pills">
+            <li class="active"><a href="#" id="categories-tab" >Classes</a></li>
+            <li ><a href="#" id="animals-tab" >Animals</a></li>
+            <li ><a href="#" id="description-tab" >Description</a></li>
+          </ul>
+      <br/><br/>
+
+
+      <!-- the content section is empty as we will fill it 
+            via javascript and templates -->
+      <div id="content"  class="container-fluid"  role="main">
+      </div>
+  </div> <!-- / container -->
+  <script id="categories-template" type="text/x-handlebars-template">
+   <div class="row">
+   <h4>Here below are three of the most known animal groups. Click on every group to see the images of the animals in it. Enjoy</h4>
+   <h3 align="center" class="header">GROUPS</H3>
+       {{#each category}}
+       <div align="center" class="col-xs-12 col-md-4"> 
+              <div class="category-thumbnail"  data-id="{{@index}}">
+            
+              <h4 class="category-label"> {{name}} </h4>
+			   {{#each animals}}
+			   <h3 >{{name}}</h3>
+			   {{/each}}
+			   
+             </div>
+        </div><!-- / col -->
+       {{/each}}
+
+   </div><!-- / row -->
+</script>
+
+<script id="animals-template" type="text/x-handlebars-template">
+
+  <div class="row">
+    <!-- xs-12 : small display shows a single column (taking up 12 grid columns)-->
+    <!-- md-3 : medium and up displays use 3 grid columns per column -->
+    <h4>Please click on the animal image for a complete description !!!</h4>
+    <h2 align="center">{{name}}</h2>
+    
+    {{#each animals}}
+    <div class="col-xs-12 col-md-3"> 
+         <div class="animal-thumbnail"  data-id="{{@index}}">
+
+          <h3 >{{name}}</h3>
+           <img class="crop-img" src="{{image1}}" alt=""/> 
+         </div>      
+    </div> <!-- / col -->
+   {{/each}}
+
+  </div> <!-- / row -->
+
+</script>
+
+<script id="description-template" type="text/x-handlebars-template">
+    <div align="center" class="col-xs-12 col-md-12"> 
+      <h1  >{{name}}</h1>
+
+        <img  class="large-img" src="{{image2}}" alt=""/> 
+         <br></br> 
+        <div class="desc" >
+            <p class="description-label">{{description}}</p>
+        </div>
+      </div> <!-- / col -->
+
+</script>
+
+
+</body>

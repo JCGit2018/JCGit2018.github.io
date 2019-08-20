@@ -1,0 +1,4 @@
+Interesante galeria del reino animal. En animals.js estan los datos. EL majo de evntos lo realiza assignment.js
+Toda la informacion se trae dedsde enlaces a internet.
+Se emplea la libreria bootstrap.
+La pagina es responsive
