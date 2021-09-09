@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Case Converter</title>
+</head>
+<body>
+    
+    <div class ="title">Case Converter</div>
+    <textarea name="" id="textToConvert" cols="60" rows="20"></textarea>
+    <br>
+    <button id ="upper-case" >Upper Case </button>
+    <button id ="lower-case">Lower Case </button>
+    <button id = "proper-case">Proper Case  </button>
+    <button id = "sentence-case"> Sentence Case</button>
+    <button id = "save-text-file"> Save Text File</button>
+    <script>
+            function download(filename, text) {
+                 var element = document.createElement('a');
+                 element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+                 element.setAttribute('download', filename);
+
+                 element.style.display = 'none';
+                 document.body.appendChild(element);
+
+                 element.click();
+
+                document.body.removeChild(element);
+            }
+
+            let textArea = document.getElementById('textToConvert');
+
+            let toSentenceCaseButton = document.getElementById('sentence-case');
+
+            toSentenceCaseButton.addEventListener('click', function () {
+                let sentences = textArea.value.toLowerCase().split('. ');
+                let modifiedSentences = [];
+                for (let sentence of sentences) {
+                    let modifiedSentence = sentence.charAt(0).toUpperCase().concat(sentence.slice(1));
+                    modifiedSentences.push(modifiedSentence);
+                }
+                textArea.value = modifiedSentences.join('. ');
+            });
+                   
+            document.getElementById('upper-case')
+            .addEventListener('click', function () {
+                textArea.value  = textArea.value.toUpperCase();
+            });
+
+            document.getElementById('lower-case')
+            .addEventListener('click', function () {
+                textArea.value  = textArea.value.toLowerCase();
+            });
+
+            let toProperCaseButton = document.getElementById('proper-case');
+            toProperCaseButton.addEventListener('click', function () {
+                let words = textArea.value.toLowerCase().split(' ');
+                let modifiedWords = [];
+                for (let word of words) {
+                    let modifiedWord = word.charAt(0).toUpperCase().concat(word.slice(1));
+                    modifiedWords.push(modifiedWord);
+                }
+                textArea.value = modifiedWords.join(' ');
+            });            
+           
+            document.getElementById('save-text-file')
+            .addEventListener('click', function () {
+                download("text.txt", textArea.value);
+            });
+
+           
+           </script>
+</body>
+</html>
